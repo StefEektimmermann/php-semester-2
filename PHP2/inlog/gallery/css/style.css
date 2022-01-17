@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+    background-color: burlywood;
+    background-size: cover;
+}
+
+.blue{
+    border: purple solid 5px;
+}

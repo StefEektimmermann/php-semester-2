@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: burlywood;
+    background-size: cover;
+    font-family: monospace;
+}
+
+.formbox{
+    width: 500px;
+    background: rgba(0, 0, 0, 0, 8);
+    margin: 12% auto;
+    padding: 50px 0;
+    color:sienna;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.inputbox{
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.inputbox input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+::placeholder{
+    color: #ccc;
+
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+.eye{
+    margin: 400px;
+}
+
+.login{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding: 10px 0;
+    border: 1px #fff;
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+
+}
+
+#hide1{
+    display: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/inlogcss/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Crypto gallery</title>
+</head>
+<body>
+    <div class= "formbox">
+        <h1>Login Here</h1>
+        <div class="inputbox">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email"> <br>
+        </div>
+        <div class="inputbox">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="Password" id="myInput"> <br>
+            <span class="eye" onclick="myFunction()">
+                <i id="hide1"class="fas fa-eye"></i>
+                <i id="hide2"class="fas fa-eye-slash"></i>
+            </span>
+        </div>
+        <form action="http://172.16.199.2/PHP2/inlog/gallery/gallery.php" method="POST">
+            <button type="submit" class="login">LOGIN</button>
+         </form>
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+            if (x.type === 'password'){
+                x.type = "text";
+                y.style.display = block;
+                z.style.display = none;
+
+            }
+            else{
+                x.type = "password";
+                y.style.display = none;
+                z.style.display = block;
+            }
+        }
+    </script>
+</body>
+</html>
